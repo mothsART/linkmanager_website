@@ -30,7 +30,6 @@ Pour cela, j'utilise :
   Pourrais sans doute être remplacé par systemd. (ou d'autres technos plus vielles/bancales : launchd ou runinit)
 
 J'ai utilisé des technos "hypes" sans pour autant garantir qu'elles sont les plus adaptés.
-Pour celà, un bench serait le bienvenue...
 
 ::
 
@@ -89,3 +88,4 @@ Perso, je lance ceci en "daily" via anacron: (en user mode)
 .. code-block:: bash
 
     linkm dump >| $HOME/backup/linkmanager/$(date +"%d_backup.json")
+

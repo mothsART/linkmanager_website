@@ -81,6 +81,9 @@ LinkManager a été créé dans le but de combler plusieurs manques :
       de réalisation)
     - un soft orienté recherche : auto-complétion des étiquettes (tags)
 
+Il utilise pleinement Python 3 : .. image:: https://caniusepython3.com/project/linkmanager.png?style=flat
+    :target: https://caniusepython3.com/project/linkmanager
+
 Sous le capot
 -------------
 
@@ -151,6 +154,10 @@ Concurrents
 
 - cozy.io avec son plugin "bookmarks" https://demo.cozycloud.cc/#apps/bookmarks/
 - Shaarli : https://github.com/sebsauvage/Shaarli
+
+- l'extension Chrome "Bookmark Manager" : http://www.developpez.com/actu/76841/Google-annonce-Bookmark-Manager-une-extension-pour-mieux-gerer-ses-favoris-sur-Chrome/
+
+- raindrop.io
 
 On en parle
 -----------
