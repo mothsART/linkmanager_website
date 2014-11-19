@@ -8,6 +8,12 @@ Roadmap
 :summary: L'avenir de LinkManager
 :lang: fr
 
+Introduction
+------------
+
+LinkManager utilise la normalisation de sa gestion des versions.
+Pour en savoir plus sur le "sémantique versionning" : http://semver.org/
+
 Roadmap pour la 0.4
 -------------------
 
@@ -17,26 +23,34 @@ Roadmap pour la 0.4
 Roadmap pour la 0.4.1
 ---------------------
 
-- EditMode gardé en mémoire
-- L'édition du fichier de configuration est pris en compte en "live"
+- **DONE** change version with "invoke version"
+- **DONE** fakeredis (on test coverage)
+- **DONE** [cli] tags auto-completion on search mode
+- **DONE** progress bar lors d'un load
+- **DONE** asynchronisme lors d'un "load"
+- **DONE** Bug : l'option DEBUG = False donne du inlining cassé...
+- **DONE** EditMode gardé en mémoire
 - **DONE** Résoudre les bugs liés à la mise en production. (soucis d'urls relatives)
+- L'édition du fichier de configuration est pris en compte en "live"
 - Rajout de tests unitaires (dont un jsonschema pour les import/export :
-  https://github.com/Julian/jsonschema) avec une meilleur couverture et éventuellement des tests sur la partie web
+  https://github.com/Julian/jsonschema) avec une meilleur couverture
 - Maj sur pypi et de mon ppa
 - tests unitaires de Flask avec pytest : https://pypi.python.org/pypi/pytest-flask
 - [webserver] :
-    - favicon
-    - fenêtre modale pour la suppression (évite les accidents) + paramètrage
+    - **DONE** favicon
+    - **DONE** fenêtre modale pour la suppression (évite les accidents) + paramètrage
     - **DONE** update amélioré (rapidité d'execution + factorisation du code)
     - ajout amélioré
-    - Paramètrage : suppression et/ou modification bloqué
 
 Roadmap pour la 0.5
 -------------------
 
 - Paquet pour ArchLinux (j'ai 2 ordi sur 3 maintenant sous Arch)
-- Linkmanager en mode "server":
-    - fichiers de log : activité et erreurs
+- [webserver]:
+    - fichiers de log :
+      - activité (pour des statistiques d'utilisation de la démo également)
+      - erreurs
+    - Paramètrage : suppression/addition/modification bloqué
 
 - Caching des pages :
   - si la page a changé depuis son enregistrement, un diff sera possible via la version web
@@ -52,6 +66,7 @@ Roadmap pour la 0.5
 Roadmap encore indéfini
 -----------------------
 
+- Possibilité d'épingler des résultats : pour notament les comparer à d'autres résultats.
 - Ajout "automatiques" à partir de flux Rss/Atom
     - possibilité de filtrer
 - Auto-tag de certains sites :

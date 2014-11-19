@@ -147,6 +147,9 @@ Il y a plusieurs manières de participer activement à ce projet :
       il peut donc être traduit dans d'autre langue que le français ou l'anglais.
 
       Voir la page `Traduction <|filename|/french/translate.rst>`_
+
+    - Si vous êtes intégrateur, graphiste ou ergonome... vous avez votre mot à dire.
+
     - Si vous êtes utilisateur : parlez-en autours de vous, remonter les bugs.
 
 Concurrents

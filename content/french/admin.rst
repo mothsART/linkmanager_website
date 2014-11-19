@@ -77,6 +77,14 @@ Pour en avoir le coeur net :
 De même, les règles de caching restent approximatives et pourraient être améliorés, selon le cas, par une gestion du cache en RAM.
 (Nginx peut cacher en Ram via Memcached, Redis, tempfs etc.)
 
+
+Autre dépendances
+-----------------
+
+Afin de minifier le javascript, la librairie "jsmin" est utilisé.
+Pour des soucis de simplicité, cette dépendance est installé d'office pour l'instant. (requirements/base.txt)
+(Il faudrait qu'il soit optionnel + une détection de présence dans le cas d'un serveur)
+
 Tâches Cron/Anacron
 -------------------
 
