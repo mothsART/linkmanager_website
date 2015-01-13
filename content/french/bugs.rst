@@ -1,7 +1,7 @@
 Bugs
 ####
 
-:date: 2014-09-23 10:20
+:date: 2014-12-13 11:30
 :tags: bug
 :slug: bug
 :authors: Ferry Jérémie
@@ -19,4 +19,5 @@ Misc
 ----
 
 - Usage on Terminology with Archlinux : background color (error) persistent...
-
+- [cli] : limit nb of input (e.g. Y or n)
+- [cli] : un retour au début se place avant le label de l'input

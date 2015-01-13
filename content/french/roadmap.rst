@@ -31,20 +31,25 @@ Roadmap pour la 0.4.1
 - **DONE** Bug : l'option DEBUG = False donne du inlining cassé...
 - **DONE** EditMode gardé en mémoire
 - **DONE** Résoudre les bugs liés à la mise en production. (soucis d'urls relatives)
+
 - L'édition du fichier de configuration est pris en compte en "live"
 - Rajout de tests unitaires (dont un jsonschema pour les import/export :
   https://github.com/Julian/jsonschema) avec une meilleur couverture
 - Maj sur pypi et de mon ppa
 - tests unitaires de Flask avec pytest : https://pypi.python.org/pypi/pytest-flask
-- [webserver] :
+- [webapp] :
     - **DONE** favicon
     - **DONE** fenêtre modale pour la suppression (évite les accidents) + paramètrage
     - **DONE** update amélioré (rapidité d'execution + factorisation du code)
     - ajout amélioré
+    - remplacer les erreurs de formulaire par des tooltips Bootstrap.
+    - remplacer les tableaux par des form-group Bootstrap.
+    - **DONE** remplacer le "priority order" par un rating avec des étoiles (utilisation de https://github.com/kartik-v/bootstrap-star-rating/)
 
 Roadmap pour la 0.5
 -------------------
 
+- utilisation en priorité du minimizer http://ur1.ca/ (gnu)
 - Paquet pour ArchLinux (j'ai 2 ordi sur 3 maintenant sous Arch)
 - [webserver]:
     - fichiers de log :
@@ -55,16 +60,28 @@ Roadmap pour la 0.5
 - Caching des pages :
   - si la page a changé depuis son enregistrement, un diff sera possible via la version web
   - option de taille du cache (du coup, jauge de remplissage), de l'emplacement
+
 - Possibilité d'avoir le favicon et un aperçu du site au survol.(imprim écran)
-- [webserver] :
+- [webapp] :
     - i18n
     - ajout de filtres (rechercher tout sauf ce qui se rapporte au tag "cuisine" par exemple)
     - Nuage de tags avec la possibilité d'en glisser/déposer.
     - Multi-pages avec une option de configuration (ex: MAX_RESULTS_BY_PAGE = 10)
     - Rajout de flux rss sortants
+    - le double-clic permet l'édition
 
 Roadmap encore indéfini
 -----------------------
+
+- [webapp] :
+    - supprimer la dépendance à jquery-ui : supprimer les dialogues en priorité
+
+- modification via des utilitaires :
+    - editeur WYSIWYG : soit "Raptor-editor", "Summernote" ou "CKeditor"
+    - supprimer des parties
+    - commentaires sous forme de tooltip
+
+- supprimer entièrement les dépendances à jquery-ui : privilégier bootstrap
 
 - Possibilité d'épingler des résultats : pour notament les comparer à d'autres résultats.
 - Ajout "automatiques" à partir de flux Rss/Atom
@@ -84,3 +101,5 @@ Roadmap encore indéfini
 - Mise en ligne d'une version "démo" + site de présentation du projet (sans doute créé avec pelican: http://blog.getpelican.com/ donc sous forme de blog avec une version français/anglais)
 - maj de la doc sous ubuntu-fr
 - création d'un fuzzer spécialement dédié à LinkManager via "Fusil"
+
+- [cli] : message d'erreur pendant l'édition
