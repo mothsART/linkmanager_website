@@ -2,7 +2,7 @@ FAQ
 ===
 
 :date: 2014-09-23 10:20
-:tags: faq question
+:tags: faq, question
 :slug: faq
 :authors: Ferry Jérémie
 :summary: Les inlassables questions
