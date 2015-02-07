@@ -130,6 +130,10 @@ figure.floatcenter, .align-center {
     margin-bottom: 11px;
 }
 
+pre {
+    line-height: 19px;
+}
+
 .highlighttable pre {
     /* Removes bootstrap default margin-bottom */
     border-color: #777;
@@ -141,14 +145,16 @@ figure.floatcenter, .align-center {
 .highlighttable .linenos pre {
     background: #e7e7e7;
     border-right-width: 0px;
+    overflow: hidden;
+    line-height: 0;
 }
 .highlighttable .linenos a {
     color: #777;
     padding: 0 5px;
     border-bottom: none;
     display: inline-block;
-    height: 18px;
-    line-height: 20px;
+    height: 19px;
+    line-height: 19px;
     width: 100%;
     vertical-align: middle;
     font-weight:: bold;
