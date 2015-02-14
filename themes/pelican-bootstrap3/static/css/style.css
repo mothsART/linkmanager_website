@@ -131,7 +131,10 @@ figure.floatcenter, .align-center {
 }
 
 pre {
+    font-size: 10px;
     line-height: 19px;
+    word-wrap: normal;
+    border-radius: 0;
 }
 
 .highlighttable pre {
@@ -209,6 +212,11 @@ pre {
     text-align: inherit;
     white-space: inherit;
     border-radius: inherit;
+}
+
+.post-info span {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .categories-timestamp {

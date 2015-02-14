@@ -162,6 +162,8 @@ Concurrents
 
 - raindrop.io
 
+- https://addons.mozilla.org/fr/firefox/addon/scrapbook/
+
 On en parle
 -----------
 

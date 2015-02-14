@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'J\xe9r\xe9mie Ferry'
 SITENAME = 'LinkManager'
-SITEURL = 'http://linkmanager.io'
+SITEURL = 'http://195.154.252.48/linkmanager'
 SITE_DESCRIPTION = "Manage Urls on terminal and/or with an web app!"
 #ABSOLUTE_SITEURL = "http://linkmanager.io"
 
@@ -37,7 +37,7 @@ STATIC_PATHS = [
 PLUGIN_PATHS = ['plugins/pelican-plugins']
 PLUGINS = [
     'assets', 'sitemap', 'gravatar',
-    'i18n_subsites', 'tipue_search'#, 'disqus_static'
+    'i18n_subsites', 'tipue_search', 'disqus_static'
 ]
 
 I18N_SUBSITES = {
@@ -64,8 +64,8 @@ SITEMAP = {
 }
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Github account', 'https://github.com/mothsART/linkmanager'),
+          ('French topic about avancement', 'http://forum.ubuntu-fr.org/viewtopic.php?id=1534131'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -79,6 +79,8 @@ TAG_CLOUD_MAX_ITEMS = 30
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_RST_OPTIONS = {'linenos': 'table', 'anchorlinenos': '', 'linespans': 'line', 'lineanchors': 'code'}
 
-DISQUS_SITENAME = 'linkmanager.io'
-DISQUS_SECRET_KEY = 'gN5rHfwoTzkW2JQZU0soYRmrxc9GTJjk7yNSvrL9ipajQzL0SCoOxQ7k0vvDjsYg'
-DISQUS_PUBLIC_KEY = 'P2aOBdvavl7uOirHbslqm2o9pyewxi4xMDm5h9o3wLtdeliWIRcHERI2WGK2AKPE'
+DISQUS_SITENAME = 'linkamanager'
+DISQUS_SECRET_KEY = 'Iq1skapIEykejHa4FwVcbomNJOKkm4CoUhTHXwiKrnNrWFDMRYvo6VUcbS5c5ode'
+DISQUS_PUBLIC_KEY = 'YbVM9ctM6uTgnAAWrezSFa1rwCiRhhNjjaPwBI9dmgcHJVYCmbw3PpwNgHcLdGzN'
+
+#DISQUS_CATEGORY_ID = "3506821" # Dev

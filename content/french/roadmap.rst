@@ -90,6 +90,9 @@ Roadmap encore indéfini
     - ex: une URL sous Youtube fournira d'emblé un tag "vidéo"
 - Correction Orthographique sur les commentaires et titres :
   Utilisation de "Hunspell spellchecker" si possible, sinon Aspell.
+
+- Recherche infructueuse : donner une liste de propositions (voir https://github.com/sunlightlabs/jellyfish)
+
 - Correction Grammatical sur les commentaires et titres (on peut rêver) :
   http://cgit.freedesktop.org/libreoffice/lightproof/
 - La possibilité de changer la configuration de linkmanager dans l'interface web
