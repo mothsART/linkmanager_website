@@ -2,15 +2,18 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'J\xe9r\xe9mie Ferry'
+AUTHOR = 'Jérémie Ferry'
 SITENAME = 'LinkManager'
 SITEURL = 'http://195.154.252.48/linkmanager'
+SITEURL = 'http://127.0.0.1:8000'
 SITE_DESCRIPTION = "Manage Urls on terminal and/or with an web app!"
-#ABSOLUTE_SITEURL = "http://linkmanager.io"
+ABSOLUTE_SITEURL = 'http://195.154.252.48/linkmanager'
+# ABSOLUTE_SITEURL = "http://linkmanager.io"
+
 
 TIMEZONE = "Europe/Paris"
 
-DEFAULT_LANG = 'fr'
+DEFAULT_LANG = 'en'
 RELATIVE_URLS = True
 
 PATH = "content"
@@ -24,30 +27,30 @@ STATIC_PATHS = [
     'extra/robots.txt'
 ]
 
-# Feed generation is usually not desired when developing
-# FEED_ALL_ATOM = None
-# CATEGORY_FEED_ATOM = None
-# TRANSLATION_FEED_ATOM = None
+DATE_FORMATS = {
+    'en': '%Y-%m-%d',
+}
 
 # Blogroll
 # LINKS =  (('Pelican', 'http://getpelican.com/'),
 #           ('Python.org', 'http://python.org/'),
 #           ('Jinja2', 'http://jinja.pocoo.org/'),
 #           ('You can modify those links in your config file', '#'),)
-PLUGIN_PATHS = ['plugins/pelican-plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'assets', 'sitemap', 'gravatar',
-    'i18n_subsites', 'tipue_search', 'disqus_static'
+    'tipue_search', 'disqus_static'
 ]
 
 I18N_SUBSITES = {
     'fr': {
-        'SITENAME': 'LinkManager',
+        'SITENAME': 'LinkManager'
     },
     'en': {
-        'SITENAME': 'LinkManager',
+        'SITENAME': 'LinkManager'
     }
 }
+
 
 SITEMAP = {
     'format': 'xml',
@@ -64,23 +67,30 @@ SITEMAP = {
 }
 
 # Social widget
-SOCIAL = (('Github account', 'https://github.com/mothsART/linkmanager'),
-          ('French topic about avancement', 'http://forum.ubuntu-fr.org/viewtopic.php?id=1534131'),)
+SOCIAL = (
+    ('Github account', 'https://github.com/mothsART/linkmanager'),
+    (
+        'French topic about avancement',
+        'http://forum.ubuntu-fr.org/viewtopic.php?id=1534131'
+    ),
+)
 
 DEFAULT_PAGINATION = 10
 
 THEME = "themes/pelican-bootstrap3"
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
 
 TAG_CLOUD_MAX_ITEMS = 30
 
 # Code highlighting
 PYGMENTS_STYLE = 'emacs'
-PYGMENTS_RST_OPTIONS = {'linenos': 'table', 'anchorlinenos': '', 'linespans': 'line', 'lineanchors': 'code'}
+PYGMENTS_RST_OPTIONS = {
+    'linenos': 'table',
+    'anchorlinenos': '',
+    'linespans': 'line', 'lineanchors': 'code'
+}
 
 DISQUS_SITENAME = 'linkamanager'
+DISQUS_CATEGORY_ID = "3506724"  # Dev
+
 DISQUS_SECRET_KEY = 'Iq1skapIEykejHa4FwVcbomNJOKkm4CoUhTHXwiKrnNrWFDMRYvo6VUcbS5c5ode'
 DISQUS_PUBLIC_KEY = 'YbVM9ctM6uTgnAAWrezSFa1rwCiRhhNjjaPwBI9dmgcHJVYCmbw3PpwNgHcLdGzN'
-
-#DISQUS_CATEGORY_ID = "3506821" # Dev

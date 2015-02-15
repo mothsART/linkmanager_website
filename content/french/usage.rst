@@ -3,12 +3,12 @@ Utilisation
 
 :date: 2014-09-23 10:20
 :tags: utilisation, usage
-:slug: utilisation
+:slug: usage
 :authors: Ferry Jérémie
 :summary: Try it
 :lang: fr
 
-Examples
+Exemples
 --------
 
 .. code-block:: bash

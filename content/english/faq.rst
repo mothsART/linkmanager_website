@@ -1,7 +1,7 @@
 FAQ
 ===
 
-:date: 2014-09-23 10:20
+:date: 23-09-2014 10:20
 :tags: faq question
 :slug: faq
 :authors: Ferry Jérémie
